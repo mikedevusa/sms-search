@@ -22,3 +22,5 @@ SMS response will list top 3 results with phone numbers in format of `Name | Loc
 6. Deploy the serverless function: `twilio serverless:deploy`
 7. Associate the function URL listed in Step 5 output with your virtual number: `twilio phone-numbers:update <TWILIO_PHONE_NUMBER> --sms-url <YOUR_FUNCTION_URL>`
    - Function URL will be in format similar to (example) https://abcde-12345-dev.twil.io/sms-reply
+
+You can monitor logs with `twilio serverless:logs --tail` or in the Twilio console
